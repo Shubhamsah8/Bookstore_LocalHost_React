@@ -1,4 +1,6 @@
 package localhost.bookstore.qa.pages;
 
-public class Dashboard {
+import localhost.bookstore.qa.baseclass.BaseClass;
+
+public class Dashboard extends BaseClass {
 }
