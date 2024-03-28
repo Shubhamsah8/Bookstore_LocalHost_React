@@ -1,10 +1,7 @@
 package localhost.bookstore.qa.utility;
 
 import localhost.bookstore.qa.baseclass.BaseClass;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.ss.usermodel.*;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,7 +10,7 @@ public class TestUtil extends BaseClass {
     public static long PAGE_LOAD_TIMEOUT = 5;
     public static long IMPLICITLY_WAIT = 2;
 
-    public static String TestDataPath = "C:\\Users\\Admin\\IdeaProjects\\Bookstore_LocalHost_React\\src\\main\\java\\localhost\\bookstore\\qa\\testdata\\LoginData.xlsx";
+    public static String TestDataPath = "C:\\Users\\RYZEN\\IdeaProjects\\Bookstore_LocalHost_React\\src\\main\\java\\localhost\\bookstore\\qa\\testdata\\LoginData.xlsx";
 
     static Workbook book;
     static Sheet sheet;
@@ -33,7 +30,11 @@ public class TestUtil extends BaseClass {
         for (int i = 0; i < sheet.getLastRowNum(); i++) {
             Row row = sheet.getRow(i + 1);
             for (int j = 0; j < row.getLastCellNum(); j++) {
-                data[i][j] = row.getCell(j).toString();
+                if (sheet.getRow(0).getCell(j).getCellType() == CellType.BOOLEAN) {
+                    data[i][j] = row.getCell(j).getBooleanCellValue();
+                } else {
+                    data[i][j] = row.getCell(j).toString();
+                }
             }
         }
 
@@ -45,4 +46,5 @@ public class TestUtil extends BaseClass {
 
         return data;
     }
+
 }

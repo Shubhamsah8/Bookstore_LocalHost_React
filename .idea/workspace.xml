@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e6f3fce-bdd4-4c10-8f38-58c99e95bb68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/localhost/bookstore/qa/listener/TestListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/baseclass/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/baseclass/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/pages/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/pages/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/pages/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/testdata/LoginData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/testdata/LoginData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/utility/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/utility/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localhost/bookstore/qa/testcases/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/localhost/bookstore/qa/testcases/LoginPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +45,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.C:/Users/Admin/IdeaProjects/Bookstore_LocalHost_React/testng.xml.executor": "Run",
+    "TestNG.LoginPageTest.executor": "Run",
+    "TestNG.LoginPageTest.facebookLoginTest.executor": "Run",
+    "TestNG.LoginPageTest.googleLoginTest.executor": "Run",
     "TestNG.LoginPageTest.loginTest.executor": "Run",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -53,6 +60,59 @@
       <module name="BookStore_React" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BookStore_React" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="localhost.bookstore.qa.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="localhost.bookstore.qa.testcases" />
+      <option name="MAIN_CLASS_NAME" value="localhost.bookstore.qa.testcases.LoginPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.facebookLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BookStore_React" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="localhost.bookstore.qa.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="localhost.bookstore.qa.testcases" />
+      <option name="MAIN_CLASS_NAME" value="localhost.bookstore.qa.testcases.LoginPageTest" />
+      <option name="METHOD_NAME" value="facebookLoginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.googleLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BookStore_React" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="localhost.bookstore.qa.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="localhost.bookstore.qa.testcases" />
+      <option name="MAIN_CLASS_NAME" value="localhost.bookstore.qa.testcases.LoginPageTest" />
+      <option name="METHOD_NAME" value="googleLoginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -81,15 +141,11 @@
       <list>
         <item itemvalue="TestNG.C:/Users/Admin/IdeaProjects/Bookstore_LocalHost_React/testng.xml" />
         <item itemvalue="TestNG.LoginPageTest.loginTest" />
+        <item itemvalue="TestNG.LoginPageTest" />
+        <item itemvalue="TestNG.LoginPageTest.facebookLoginTest" />
+        <item itemvalue="TestNG.LoginPageTest.googleLoginTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-22-openjdk-22-3183f394aec4-bad0321e" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

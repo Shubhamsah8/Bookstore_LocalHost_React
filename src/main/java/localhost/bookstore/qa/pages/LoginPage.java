@@ -34,4 +34,18 @@ public class LoginPage extends BaseClass{
         return new Dashboard();
     }
 
+    // Method to sing in into the Bookstore application through Facebook
+    public Dashboard FacebookLogin(){
+        facebook.click();
+
+        return new Dashboard();
+    }
+
+    // Method to sign in into the Bookstore application through Google
+    public Dashboard GoogleLogin(){
+        google.click();
+
+        return new Dashboard();
+    }
+
 }
