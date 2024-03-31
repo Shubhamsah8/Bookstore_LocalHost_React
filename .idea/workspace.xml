@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e6f3fce-bdd4-4c10-8f38-58c99e95bb68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/localhost/bookstore/qa/testcases/DashboardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/baseclass/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/baseclass/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/config/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/pages/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/pages/Dashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/utility/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/localhost/bookstore/qa/utility/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/localhost/bookstore/qa/testcases/DashboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/localhost/bookstore/qa/testcases/DashboardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.C:/Users/Admin/IdeaProjects/Bookstore_LocalHost_React/testng.xml.executor": "Run",
     "TestNG.DashboardTest.cartTest.executor": "Run",
+    "TestNG.DashboardTest.executor": "Run",
     "TestNG.DashboardTest.logOutTest.executor": "Run",
     "TestNG.DashboardTest.searchBarTest.executor": "Run",
     "TestNG.LoginPageTest.executor": "Run",
@@ -57,7 +58,24 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.DashboardTest.cartTest">
+  <component name="RunManager" selected="TestNG.DashboardTest.searchBarTest">
+    <configuration name="DashboardTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BookStore_React" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="localhost.bookstore.qa.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="localhost.bookstore.qa.testcases" />
+      <option name="MAIN_CLASS_NAME" value="localhost.bookstore.qa.testcases.DashboardTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DashboardTest.cartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BookStore_React" />
       <extension name="coverage">
@@ -112,23 +130,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BookStore_React" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="localhost.bookstore.qa.testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="localhost.bookstore.qa.testcases" />
-      <option name="MAIN_CLASS_NAME" value="localhost.bookstore.qa.testcases.LoginPageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginPageTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BookStore_React" />
       <extension name="coverage">
@@ -149,20 +150,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DashboardTest.cartTest" />
-        <item itemvalue="TestNG.DashboardTest.logOutTest" />
         <item itemvalue="TestNG.DashboardTest.searchBarTest" />
+        <item itemvalue="TestNG.DashboardTest.logOutTest" />
+        <item itemvalue="TestNG.DashboardTest" />
+        <item itemvalue="TestNG.DashboardTest.cartTest" />
         <item itemvalue="TestNG.LoginPageTest.loginTest" />
-        <item itemvalue="TestNG.LoginPageTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

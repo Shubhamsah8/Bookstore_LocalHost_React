@@ -24,7 +24,7 @@ public class BaseClass {
         try{
             properties = new Properties();
 
-            FileInputStream inputStream = new FileInputStream("C:\\Users\\shubh\\IdeaProjects\\Bookstore_LocalHost_React\\src\\main\\java\\localhost\\bookstore\\qa\\config\\config.properties");
+            FileInputStream inputStream = new FileInputStream("C:\\Users\\RYZEN\\IdeaProjects\\Bookstore_LocalHost_React\\src\\main\\java\\localhost\\bookstore\\qa\\config\\config.properties");
             properties.load(inputStream);
             logger.info("Properties loaded successfully: " + properties);
         } catch (FileNotFoundException e) {

@@ -10,7 +10,7 @@ public class TestUtil extends BaseClass {
     public static long PAGE_LOAD_TIMEOUT = 5;
     public static long IMPLICITLY_WAIT = 2;
 
-    public static String TestDataPath = "C:\\Users\\shubh\\IdeaProjects\\Bookstore_LocalHost_React\\src\\main\\java\\localhost\\bookstore\\qa\\testdata\\LoginData.xlsx";
+    public static String TestDataPath = "C:\\Users\\RYZEN\\IdeaProjects\\Bookstore_LocalHost_React\\src\\main\\java\\localhost\\bookstore\\qa\\testdata\\LoginData.xlsx";
 
     static Workbook book;
     static Sheet sheet;

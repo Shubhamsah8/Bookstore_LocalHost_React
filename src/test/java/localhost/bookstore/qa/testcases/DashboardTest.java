@@ -57,8 +57,6 @@ public class DashboardTest extends BaseClass {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Logging out")
     public void logOutTest() throws InterruptedException{
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[1]")));
         dashboard.Logout();
     }
 
@@ -68,8 +66,6 @@ public class DashboardTest extends BaseClass {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Go to the Cart")
     public void cartTest() throws InterruptedException{
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[2]")));
         dashboard.Cart();
     }
 

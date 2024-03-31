@@ -1,9 +1,14 @@
 package localhost.bookstore.qa.pages;
 
 import localhost.bookstore.qa.baseclass.BaseClass;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class Dashboard extends BaseClass {
 
@@ -16,10 +21,10 @@ public class Dashboard extends BaseClass {
     @FindBy(xpath = "//input[contains(@aria-label, 'search')]")
     WebElement searchBar;
 
-    @FindBy(xpath = "//button[1]")
+    @FindBy(xpath = "//*[@id=\"root\"]/div/div/div/header/div/div[4]/button[1]")
     WebElement profile;
 
-    @FindBy(xpath = "//button[2]")
+    @FindBy(xpath = "//*[@id=\"root\"]/div/div/div/header/div/div[4]/button[2]")
     WebElement cart;
 
     @FindBy(xpath = "//li[text()='Log Out']")
@@ -36,6 +41,8 @@ public class Dashboard extends BaseClass {
 
     // Method to log out from the dashboard
     public LoginPage Logout(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"root\"]/div/div/div/header/div/div[4]/button[1]")));
         profile.click();
         logout.click();
 
